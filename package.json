@@ -4,7 +4,7 @@
   "type": "module",
   "license": "MIT",
   "author": "fahadsaleem",
-  "description": "retap hooks",
+  "description": "retap editor hooks utils",
   "keywords": [
     "@retap/hooks",
     "tiptap"
@@ -63,6 +63,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/fahadsaleem020/retap-hooks.git"
-    
   }
 }
