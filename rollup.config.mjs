@@ -2,8 +2,8 @@ import pkg from "./package.json" assert { type: "json" };
 import { externals } from "rollup-plugin-node-externals";
 import typescript from "rollup-plugin-typescript2";
 import terser from "@rollup/plugin-terser";
-// import dts from "rollup-plugin-dts";
 import { defineConfig } from "rollup";
+import del from "rollup-plugin-delete";
 
 export default defineConfig([
   {
@@ -16,6 +16,7 @@ export default defineConfig([
     },
 
     plugins: [
+      del({ targets: "lib/*", verbose: true }),
       terser(),
       externals(),
       typescript({
@@ -26,9 +27,4 @@ export default defineConfig([
       }),
     ],
   },
-  // {
-  //   input: pkg.module,
-  //   output: [{ file: pkg.types, format: "esm" }],
-  //   plugins: [dts(), terser()],
-  // },
 ]);
