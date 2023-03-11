@@ -1,7 +1,7 @@
-import { RetapDisclosureMeta, UseDisclosePropsExtended } from "@retap/types";
+import { DisclosureMeta, UseDisclosePropsExtended } from "@chakra-editor/types";
 import { useState } from "react";
 
-const useRetapDisclosure = (): RetapDisclosureMeta => {
+const useRetapDisclosure = (): DisclosureMeta => {
   const [modalId, setModalId] = useState<string>("");
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

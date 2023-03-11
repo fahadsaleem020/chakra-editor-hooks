@@ -1,4 +1,4 @@
-import { UseTable, Matrix, TableReducer } from "@retap/types";
+import { UseTable, Matrix, TableReducer } from "@chakra-editor/types";
 import { useState, useReducer, useEffect, useMemo } from "react";
 
 const tableReducer: TableReducer = (prev, { type, payload }) => {
