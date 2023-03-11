@@ -1,3 +1,3 @@
 import { DisclosureMeta } from "@chakra-editor/types";
-declare const useRetapDisclosure: () => DisclosureMeta;
-export { useRetapDisclosure };
+declare const useEditorDisclosure: () => DisclosureMeta;
+export { useEditorDisclosure };
