@@ -1,1 +1,1 @@
-# hooks for retap editor.
+# hooks for chakra editor.
